@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <form class="signin-form" id="signin-form">
+                    <h2>Đăng nhập</h2>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                 </div>
+            <div class="input-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Đăng Nhập</button>
+            <p class="signup-link">Không có tài khoản? <a href="signup1.html">Đăng ký</a></p>
+        </form>
+            <script>
+            document.getElementById('signin-form').onsubmit = function(event){
+                event.preventDefault();
+                window.location.assign('trangchu.html');
+            }
+            </script>
+        </div>
+</body>
+</html>
